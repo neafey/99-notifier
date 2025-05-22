@@ -84,10 +84,8 @@ public class NinetynineNotifierPlugin extends Plugin
 			// Avoid notifies during client startup phase
 			if (config.enableSystemNotifier() && timeSinceStart < 5000)
 			{
-				System.out.println("1");
 				notifier.notify(message);
 			}else{
-				System.out.println("2");
 				client.addChatMessage(
 						net.runelite.api.ChatMessageType.GAMEMESSAGE,
 						"",
